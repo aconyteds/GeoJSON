@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+        <title>GeoJSON Parser</title>
+        <link rel="stylesheet" href="//js.arcgis.com/3.13/dijit/themes/tundra/tundra.css">
+        <link rel="stylesheet" href="//js.arcgis.com/3.13/esri/css/esri.css">
+        <style>
+          html, body, #map { height: 100%; width: 100%; margin: 0; padding: 0; }
+        </style>
+        <script src="//js.arcgis.com/3.13/init.js" data-dojo-config="async:true,
+		dojoBlankHtmlUrl: location.pathname.replace(/\/[^/]+$/, '') +'/resources/blank.html', isDebug:true,
+        packages: [ {
+            name: 'custom',
+            location: location.pathname.replace(/\/[^/]+$/, '') + '/custom'
+        } ]"></script>
+        <script src="./main.js"></script>
+    </head>
+    <body class="tundra">
+        <div id="map"></div>
+    </body>
+</html>
